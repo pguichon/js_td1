@@ -1,0 +1,43 @@
+{
+  "name": "td1",
+  "version": "1.0.0",
+  "description": "TD 1 L2 p8",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "bootstrap-loader": "^1.0.10",
+    "bootstrap-sass": "^3.3.7",
+    "command-line-args": "^3.0.1",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "font-awesome-loader": "^1.0.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.15.0",
+    "imports-loader": "^0.6.5",
+    "light-server": "^1.1.7",
+    "node-sass": "^3.10.1",
+    "null-loader": "^0.1.1",
+    "raw-loader": "^0.5.1",
+    "resolve-url-loader": "^1.6.0",
+    "rimraf": "^2.5.2",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.14.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --inline --progress",
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "serve": "light-server -s dist -p 8000 -w '**/*.js, **/*.html'"
+  },
+  "author": "Paul guichon",
+  "license": "MIT"
+}
